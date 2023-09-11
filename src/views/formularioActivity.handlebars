@@ -1,0 +1,37 @@
+<div class="container-fluid d-flex">
+  <div class="col-6">
+    <div class="mb-2 d-flex justify-content-center">
+      <h1>Captura de actividades</h1>
+    </div>
+    <div class="mb-2 d-flex justify-content-center">
+      <form id="formularioIo" action="/pomodoro" method="POST">
+
+        <label for="name" "form-label">Title:</label>
+        <input type="text" id="title" name="title" class="form-control" required>
+        <label for="name" "form-label">Descripción:</label>
+        <input type="tex" id="descripcion" name="descripcion" class="form-control" required>
+        <label for="price">Status</label>
+        <input type="boolean" id="status" name="status" class="form-control mb-4 " required>
+        <button type="submit">Enviar</button>
+
+
+      </form>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="mb-4 d-flex justify-content-center">
+      <h2>Eliminar por id Una Actividad</h2>
+    </div>
+    <div class="mb-2 d-flex justify-content-center">
+
+
+      <form action="/pomodoro/eliminarId" method="POST">
+
+        <label for="price" class="form-label">id</label>
+        <input type="number" id="idProducto" class="form-control" name="id" required>
+        <button type="submit">Enviar</button>
+        <br>
+      </form>
+    </div>
+  </div>
+</div>
